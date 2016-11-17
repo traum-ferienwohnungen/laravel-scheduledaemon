@@ -1,0 +1,15 @@
+{
+    "name": "tback/scheduledaemon",
+    "description": "ScheduleDaemon for Laravel. You must every schedule:run is shorter then 60 seconds.",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Till Backhaus",
+            "email": "till@backha.us"
+        }
+    ]
+}
