@@ -2,11 +2,12 @@
     "name": "tback/scheduledaemon",
     "description": "ScheduleDaemon for Laravel. You must ensure every schedule:run is shorter then 60 seconds otherwise events might be ignored.",
     "type": "library",
-    "keywords": ["laravel"],
+    "keywords": [
+        "laravel"
+    ],
     "require": {
-        "illuminate/support": "^5.3",
-        "illuminate/console": "^5.3",
-        "symfony/console": "^3.1"
+        "illuminate/support": "^5.5",
+        "illuminate/console": "^5.5"
     },
     "license": "MIT",
     "authors": [
@@ -18,6 +19,13 @@
     "autoload": {
         "psr-4": {
             "ScheduleDaemon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ScheduleDaemon\\ServiceProvider"
+            ]
         }
     }
 }
