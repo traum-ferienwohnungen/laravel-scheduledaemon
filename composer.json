@@ -20,5 +20,12 @@
         "psr-4": {
             "ScheduleDaemon\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ScheduleDaemon\\ServiceProvider"
+            ]
+        }
     }
 }
