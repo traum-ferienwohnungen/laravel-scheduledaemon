@@ -32,7 +32,7 @@ class ScheduleDaemonCommand extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         while (true) {
             $start = time();
@@ -40,8 +40,10 @@ class ScheduleDaemonCommand extends Command
 
             $sleepTime = max(0, self::SCHEDULE_INTERVAL - (time() - $start));
             if (0 == $sleepTime) {
-                $this->error(sprintf('schedule:run did not finish in %d seconds. Some events might have been skipped.',
-                    self::SCHEDULE_INTERVAL));
+                $this->error(sprintf(
+                    'schedule:run did not finish in %d seconds. Some events might have been skipped.',
+                    self::SCHEDULE_INTERVAL
+                ));
             }
             sleep($sleepTime);
         }
