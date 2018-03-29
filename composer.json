@@ -1,5 +1,5 @@
 {
-    "name": "tback/scheduledaemon",
+    "name": "traum-ferienwohnungen/scheduledaemon",
     "description": "ScheduleDaemon for Laravel. You must ensure every schedule:run is shorter then 60 seconds otherwise events might be ignored.",
     "type": "library",
     "keywords": [
@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Till Backhaus",
-            "email": "till@backha.us"
+            "email": "backhaus@traum-ferienwohnungen.de"
         }
     ],
     "autoload": {

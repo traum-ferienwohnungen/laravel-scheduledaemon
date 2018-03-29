@@ -6,7 +6,7 @@ Provides a single artisan command to run `schedule:run` as a daemon. Use this if
 This package requires at least Laravel 5.5.
 Install via composer:
 ```
-composer require tback/scheduledaemon
+composer require traum-ferienwohnungen/scheduledaemon
 ```
 
 Laravels package auto-discovery feature is supported, so nothing more to do.
